@@ -1,0 +1,65 @@
+body{
+    background: url(./IMG/fond-brouillard-dynamique-realiste_23-2149111508.webp) fixed center/cover;
+}
+.karaoke-up{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.karaoke-img-left img{
+    max-width: 350px;
+    border-radius: 15px;
+
+}
+.karaoke-img-right img{
+    max-width: 350px;
+    border-radius: 15px;
+}
+.karaoke-titre{
+
+    color: var(--colorwhite);
+    text-shadow: 4px 4px 4px var(--color3);
+    font-size: 6rem;
+    padding: 25px;
+}
+.karaoke-descriptif{
+    padding: 40px ;
+    font-size: 2rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: rgb(201, 189, 189);
+}
+.karaoke-descriptif p{
+    margin: 20px;
+}
+.diaporama-container {
+    width: 100%;
+    overflow: hidden; /* Cache ce qui dépasse */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.diaporama {
+    display: flex;
+    width: 500%; /* 5 images x 100% */
+    animation: slide 20s infinite ease-in-out;
+}
+
+.diaporama img {
+    width: 20%; /* Chaque image prend 1/5ème de la largeur du parent */
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: cover; /* Évite de déformer les images */
+}
+
+/* L'animation de défilement */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-20%); } /* Image 2 */
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-40%); } /* Image 3 */
+    70% { transform: translateX(-40%); }
+    75% { transform: translateX(-60%); } /* Image 4 */
+    95% { transform: translateX(-60%); }
+    100% { transform: translateX(-80%); } /* Retour image 1 (la copie) */
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "LeagueScript";
+    src: url(./FONTS/LeagueScript-Regular.ttf);
+}
+
+/* TABLETTE MAX-WIDTH 770px */
+/* portable MAX-WIDTH 640px */
+
+:root {
+    --color1: #ede4d0;
+    --color2: rgba(255, 255, 255, 0.21);
+    --color3: rgb(0, 4, 255);
+    --color4: rgb(243, 209, 18);
+    --color5: rgb(136, 129, 129);
+    --colorwhite: white;
+    --colorblack: black;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+* ::selection {
+    background: var(--color2);
+    color: var(--colorwhite);
+}
+button{
+    background: none;
+    outline: none;
+    border: 1px solid whitesmoke;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: black ;
+    background: whitesmoke;  
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+}
+
+#box-container{
+    padding: 50px;
+    border: 2px black;
+    border-radius: 15px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.21);
+    background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
+    margin:80px;
+}
+@media screen and (max-width : 480px){
+    button{
+        font-weight: normal;
+    }
+    #box-container{
+        padding: 5px;
+        margin: 10px;
+    }
+}

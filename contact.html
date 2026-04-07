@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dj chapeau noir animation-contact</title>
+    <link rel="stylesheet" href="./ASSETS/NAV.CSS">
+    <link rel="stylesheet" href="./ASSETS/setting.css">
+    <link rel="stylesheet" href="./ASSETS/CONTACT.CSS">
+
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <a href="./INDEX.HTML"><li>Accueil</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <section class="presentation" id="box-container">
+        <div class="presentation-titre">
+           <h1>contact</h1>
+        </div>
+        <div class="presentation-texte">
+            <p>Sur Vannes, Locminé et partout dans le Morbihan, contactez Dj chapeau noir Animation pour dynamiser vos soirées dansantes et autres fêtes …</p>
+            <p>Ambiance assurée pour vos mariages, anniversaires, soirées dansantes, bals populaires, repas d’entreprise ou d’association</p>
+        </div>
+
+    
+      <form action="https://formspree.io/f/mojwwpgp" method="POST" id="contact-form">
+    
+    <div class="partie-1">
+        <div class="box-form1">
+            <input type="text" name="nom" id="surname" placeholder="Nom" required>
+        </div>
+        <div class="box-forme2">
+            <input type="text" name="prenom" id="name" placeholder="Prénom" required>
+        </div> 
+    </div>
+
+    <div class="partie-2">
+        <div class="box-form3">
+            <input type="email" name="email" id="mail" placeholder="Adresse mail" required>
+        </div>
+        <div class="box-forme4">
+            <input type="tel" name="telephone" id="tel" placeholder="Téléphone">
+        </div>
+    </div>
+
+    <div class="partie-3">
+        <textarea name="message" id="msg" placeholder="Votre message" cols="30" rows="5" required></textarea>
+    </div>
+
+    <div class="cgv-v">
+        <input type="checkbox" name="accept_cgv" id="cgv" required>
+        <label for="cgv">EN VALIDANT CE FORMULAIRE, J'ACCEPTE QUE LES INFORMATIONS SAISIES SOIENT UTILISÉES...</label>
+    </div>
+
+    <div class="info-bouton">
+        <button type="submit">Envoyer le message</button>
+    </div>
+
+</form>
+
+
+
+
+    <script src="./INDEX.JS"></script>
+</body>
+</html>

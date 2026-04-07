@@ -1,0 +1,36 @@
+
+
+nav{
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: -2px -2px 0px 0px rgb(255, 255, 255);
+    background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.445) 0%, rgba(255, 255, 255, 0) 100%);
+}
+@media screen and (max-width:480px) {
+    .nav{
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+li{
+    cursor: pointer;
+    position: relative;
+    font-size: 5rem;
+    color: yellow;
+    text-shadow: 4px 4px 4px blue;
+}
+@media screen and (max-width:480px) {
+    li{
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+

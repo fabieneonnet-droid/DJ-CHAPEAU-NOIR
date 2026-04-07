@@ -1,0 +1,192 @@
+body{
+    background: url(./IMG/fond-brouillard-dynamique-realiste_23-2149111508.webp) fixed center/cover;
+}
+.presentation{
+   padding: 50px 350px;
+    margin: 50px;
+}
+@media screen and (max-width:480px) {
+    .presentation{
+        padding: 10px;
+    }
+}    
+
+.presentation-titre{
+    font-size: 2rem;
+    padding: 10px;
+}
+.presentation-titre h1{
+    font-size: 5rem;
+    color: yellow;
+    text-shadow: 4px 4px 2px blue;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}@media screen and (max-width:480px) {
+    .presentation-titre h1{
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+.presentation-texte{
+    
+    padding: 70px;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 45px;
+    align-items: center;
+    display: block;
+    font-weight: bold;
+}
+@media screen and (max-width:480px) {
+    .presentation-texte{
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+}
+.partie-1{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;    
+}
+
+#name{
+    background: rgba(128, 128, 128, 0.363);
+    border: 2px black;
+    border-radius: 5px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.301); 
+    font-size: 2rem;
+    text-align: center;   
+    color: white;
+    padding: 10px;
+    width:  550px;
+    text-transform: uppercase;
+
+}
+#surname{
+    background: rgba(128, 128, 128, 0.363);
+    border: 2px black;
+    border-radius: 5px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.301); 
+    font-size: 2rem;
+    text-align: center;   
+    color: white;
+    padding: 10px;
+    width:  550px;
+    text-transform: uppercase;
+}
+.partie-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;    
+}
+#mail{
+    background: rgba(128, 128, 128, 0.363);
+    border: 2px black;
+    border-radius: 5px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.301); 
+    font-size: 2rem;
+    text-align: center;   
+    color: white;
+    padding: 10px;
+    width:  550px;
+    text-transform: uppercase;
+    
+}
+#tel{
+    background: rgba(128, 128, 128, 0.363);
+    border: 2px black;
+    border-radius: 5px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.301); 
+    font-size: 2rem;
+    text-align: center;   
+    color: white;
+    padding: 10px;
+    width:  550px;
+    text-transform: uppercase;
+}
+#msg{
+    background: rgba(128, 128, 128, 0.363);
+    border: 2px black;
+    border-radius: 5px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.301); 
+    font-size: 2rem;
+    text-align: center;   
+    color: white;
+    padding: 10px;
+    width:  850px;
+    margin: 30px;
+}
+#cgv{
+    transform: scale(1.5);
+    margin: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3 ease;
+}
+
+/* Le label devient plus clair quand la case est cochée */
+#cgv:checked + label {
+    opacity: 1;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* On n'oublie pas de mettre le label à 0.5 par défaut aussi pour la cohérence */
+.cgv-v label {
+    opacity: 0.5;
+}
+
+.cgv-v{
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.button-validation input{
+    background: rgb(95, 4, 170);
+    border: 2px black;
+    border-radius: 15px;
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.301); 
+    font-size: 4rem;
+    text-align: center;   
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espace entre les lignes */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.partie-1, .partie-2 {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #811781; /* Ou ta couleur préférée */
+    color: white;
+    border: none;
+    transition: 0.3s;
+    transform: scale(2);
+}

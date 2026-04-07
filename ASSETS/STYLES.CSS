@@ -1,0 +1,886 @@
+
+
+
+header{
+    background: url(./IMG/essai-carte-visite-didier.webp) fixed center/cover;
+    height: 100vh;
+}
+
+
+.header-container{
+     display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding: 30px;
+    color: var(--colorwhite);
+    letter-spacing: 2px;
+    padding-top: 145px;
+}    
+@media screen and (max-width : 480px){
+    .header-container{
+        display: block;
+        padding-top: 5px;
+    }
+    
+}
+.header-tel-container{
+    font-size: 6rem;
+    align-content: center;
+}
+@media screen and (max-width : 480px){
+    .header-tel-container{
+        display: none;
+    }
+}
+.header-tel-container h3{
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s ease;
+}
+.header-tel-container a{
+    color: var(--color4);
+    text-shadow: 4px 4px 4px var(--color3)
+}
+.header-tel-container a :hover{
+    font-size: 6rem;
+}
+
+/*------------------LOGO-------------------*/
+/* Conteneur */
+.container-name {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 50px 50px;
+  border-radius: 25px;
+  backdrop-filter: blur(6px);
+  text-align: center;
+  min-width: 550px;
+  min-height: 440px;
+  margin: 50px;
+}
+@media screen and (max-width : 480px){
+    .container-name{
+        
+        padding: 15px;
+        margin: 50px 5px;
+        min-width: 350px;
+        min-height: 240px;
+    }
+}
+
+/* DJ – jaune */
+.dj-text {
+  font-size: 7rem;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  color: #ffd700;
+  text-shadow:
+    0 0 8px #1524f0,
+    0 0 20px rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width : 480px){
+    .dj-text{
+        font-size: 2rem;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+}
+
+/* Nom – bleu */
+.name-text {
+  font-size: 8rem;
+  margin-bottom: 14px;
+  color: #ffffff;
+   margin-top: -40px;
+  text-shadow:
+    0 0 10px #1e90ff,
+    0 0 25px rgba(30, 144, 255, 0.9);
+}
+@media  screen and (max-width : 480px) {
+    .name-text{
+        font-size: 3rem;
+    }
+    
+}
+
+/* ANIMATION – jaune très fort */
+.animation-text {
+  font-family: 'League Script', cursive;
+  font-size: 5rem;
+  letter-spacing: 4px;
+  margin-top: -40px;
+  color: #ffd700;
+  text-shadow:
+    0 0 10px #ffd700,
+    0 0 30px #ffd700,
+    0 0 60px rgba(255, 215, 0, 1);
+}
+@media screen and (max-width : 480px){
+    .animation-text{
+        font-size: 2rem;
+        margin-top: -10px;
+    }
+        
+    }
+
+/* Apparition simple (DJ + Nom) */
+.dj-text span,
+.name-text span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  animation: fadeUp 0.4s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* GROS ZOOM – ANIMATION */
+.animation-text span {
+  opacity: 0;
+  display: inline-block;
+  transform: scale(0.1);
+  filter: blur(1000px);
+  animation: megaZoom 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes megaZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+/*--------DESCRIPTIF----------*/
+.header-descritif{
+    padding: 0px;
+    margin-top: 70px;
+}
+@media screen and (max-width : 480px){
+    .header-descritif{
+        margin-top: 35px;
+    }
+}
+.header-descritif p{
+    background: rgba(128, 128, 128, 0.400);
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 3rem;
+    margin: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+@media screen and (max-width : 480px){
+    .header-descritif p{
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+
+        font-weight: normal;
+    }
+}
+.button-contact{
+    margin: 100px;
+    font-size: 3rem;     
+}
+@media screen and (max-width : 480px){
+    .button-contact{
+        margin: 30px;
+    }
+}
+.button-contact button{
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--color3);
+    border: none;
+    font-size: 4rem;  
+    transition: 0.8s;  
+}
+@media screen and (max-width : 480px){
+    .button-contact button{
+        font-size: 1.5rem;
+    }
+}
+.button-contact button:hover{
+    background: var(--color4);
+    color: var(--color3);
+    opacity: 0.8;
+    font-size: 4,5rem; 
+}
+/*-----------NAV------------*/
+.header-nav-container{
+    line-height: 2rem;
+    font-size: 6rem;
+    align-content: space-around;
+    line-height: 1.4;
+    color: var(--color4);
+}
+@media screen and (max-width : 480px){
+    .header-nav-container{
+        font-size: 2rem;
+        /* line-height: 45px; */
+        /* display: none; */
+            }
+    
+}
+.header-nav-container li{
+    text-shadow: 4px 4px 4px var(--color3);
+     background: rgba(128, 128, 128, 0.08);
+     border-radius: 10px;
+     cursor: pointer;
+    position: relative;
+    transition: 0.4s ease;
+    color: var(--color4);
+}
+
+.header-nav-container li:hover{
+    font-size: 5.8rem;
+}
+@media screen and (max-width : 480px){
+    .header-nav-container li{
+    font-size: 1.5rem;  
+}
+}
+
+.Didier{
+    background: var(--colorblack);
+    padding: 50px ;
+    margin: 0;
+}
+@media screen and (max-width : 480px){
+    .didier{
+        padding: 5px;
+    }
+}
+@media screen and (max-width : 480px){
+    .img-ambiance img{
+        max-width: 250px;
+        padding: 10px;
+    }
+}
+/*---------------AMBIANCE-------------*/
+.titre-ambiance{
+    padding: 25px;
+    color: var(--colorwhite);
+    text-shadow: 4px 4px 4px var(--color3);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+@media screen and (max-width : 480px){
+    .titre-ambiance{
+        font-size: 2rem;
+    }
+}
+.texte-ambiance{
+    padding: 40px ;
+    font-size: 2.5rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: var(--color5);
+}
+@media screen and (max-width : 480px){
+    .texte-ambiance{
+        font-size: 1rem;
+        line-height: 15px;
+    }
+}
+.reseau-ambiance{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    padding-bottom: 50px;
+}
+
+.reseau-ambiance-facebook a{
+    border-radius: 50px;
+    font-size: 6rem;
+    color:blue;
+    transition: 0.3s;
+}
+@media screen and (max-width : 480px){
+    .reseau-ambiance-facebook a{
+        font-size: 4rem;   
+    }
+}
+
+.reseau-ambiance-facebook a :hover{
+    transform: scale(1.1);
+    color: white;
+    text-shadow: 8px 8px 50px blue ;
+    transition: 0.5s;   
+}
+
+.reseau-ambiance-instagram a{
+    border-radius: 50px;
+    font-size: 6rem;
+    color:rgb(223, 203, 27);
+    transition: 0.5s; 
+    padding: 30px;
+}
+@media screen and (max-width : 480px){
+    .reseau-ambiance-instagram a{
+        font-size: 4rem;   
+    }
+}
+.reseau-ambiance-instagram a :hover{
+    font-size: 5.5rem;
+    color: var(--colorwhite);
+    transition: 0.5s;  
+    background: linear-gradient(45deg,#f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+}
+.reseau-ambiance-tiktok a{
+    border-radius: 50px;
+    font-size: 6rem;
+    color:rgb(248, 248, 245);
+    transition: 0.4s; 
+}
+@media screen and (max-width : 480px){
+    .reseau-ambiance-tiktok a{
+        font-size: 4rem;   
+    }
+}
+
+.reseau-ambiance-tiktok a :hover{
+    font-size: 5.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 0px red,
+                -4px -4px 0px #25f4ee;
+    transition: 0.3s;  
+    
+}
+.ambiance-chiffre-container{
+    background-image: linear-gradient(90deg, #2a06fa 0%, #6e2aff 100%);
+    box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.678);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 25px;
+    
+}
+.ambiance-chiffre-container h4{
+    font-size: 4rem;
+}
+@media screen and (max-width : 480px){
+    .ambiance-chiffre-container h4{
+        font-size: 2rem;   
+    }
+}
+.ambiance-chiffre-container p{
+    font-weight: bold;
+    padding: 0px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width : 480px){
+    .ambiance-chiffre-container p{
+        font-size: 1rem;
+        font-weight: normal;   
+        padding: 5px 20px;
+    }
+}
+/*---------------------DESCRIPTIF---------------------*/
+.description{
+    background: var(--colorblack);
+    margin: 0;
+    padding: 0;
+    padding: 50px ;
+    margin: 0;
+    
+}
+.description-box{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+@media screen and (max-width : 480px){
+    .description-box{
+        display: block;
+    }
+}
+
+.presentation-space{
+    padding: 50px;
+}
+.description-texte-box{
+    display: flex;
+    align-content: center;
+}
+.description-texte{
+        padding: 40px ;
+        font-size: 3rem;
+        line-height: 55px;
+        font-weight: bold;
+        color: var(--color5);
+        display: flex;
+        align-content: center;     
+}
+@media screen and (max-width : 480px){
+    .description-texte{
+        font-size: 1.5rem;
+        line-height: 25px;
+
+    }
+}
+.descrition-img img{
+    border-radius: 15px;
+    width: 75%;
+    box-shadow: 1px 1px 75px 1px rgba(255, 255, 255, 0.678);
+}
+@media screen and (max-width : 480px){
+    .descrition-img img{
+        box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.678);
+    }  
+}
+
+/*-------------PRESTATION------------------*/
+.prestation{
+    background: var(--colorblack);
+    padding: 50px; 
+}
+@media screen and (max-width: 480px) {
+    .prestation{
+        padding: 0;
+        margin: 0;
+    }
+}
+.prestation-titre{
+    color: var(--colorwhite);
+    text-shadow: 4px 4px 4px var(--color3);
+    font-size: 6rem;
+    padding: 100px;
+}
+@media screen and (max-width: 480px) {
+    .prestation-titre {
+        padding:0;
+        font-size: 2rem;
+    }
+}
+
+.presentation-box-1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--color4);
+    text-shadow: 4px 4px 4px var(--color3);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:480px) {
+    .presentation-box-1{
+        display: block;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+}
+.presentation-mariage-container{
+    display: flex;
+    padding: 20px;
+}
+.presentation-mariage-img{
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
+    height: 250px;
+    width: 250px;
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-mariage-img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-mariage-img img{
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-mariage-img img{
+        height: 140px;
+        width: 140px;
+    }
+}
+#mariage{
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+@media screen and (max-width:480px){
+    #mariage{
+       opacity: 1;
+       transition: 0s;
+    }
+}
+.presentation-mariage-texte{
+    padding: 25px;
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    .presentation-mariage-texte{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+.presentation-mariage-bottom button{
+    margin: 25px;
+    padding: 25px;
+    background: blue;
+    color: white;
+    border-radius: 5100px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-mariage-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.presentation-mariage-bottom a :hover{
+    font-size: 1.7;
+    color: var(--color3);
+    background: var(--colorwhite);
+}
+
+
+.prestation-anniversaire-tire{
+    padding: 35px;
+}
+.presentation-anniversaire-container{
+    display: flex;
+    padding: 20px;
+}
+#anniversaire{
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+@media screen and (max-width:480px){
+    #anniversaire{
+       opacity: 1;
+       transition: 0s;
+    }
+}
+.presentation-anniversaire-img{
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
+    height: 250px;
+    width: 250px;
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-anniversaire-img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-anniversaire-img img{
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-anniversaire-img img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-anniversaire-texte{
+    padding: 25px;
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    .presentation-anniversaire-texte{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+.prestation-anniversaire-tire{
+    padding: 35px;
+}
+.presentation-anniversaire-bottom button{
+    margin: 25px;
+    padding: 25px;
+    background: blue;
+    color: white;
+    border-radius: 51000px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-anniversaire-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.presentation-anniversaire-bottom a :hover{
+    font-size: 1.7;
+    color: var(--color3);
+    background: var(--colorwhite);
+}
+
+@media screen and (max-width:480px){
+    .presentation-space {
+       padding: 0;
+    }
+}
+
+.presentation-box-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--color4);
+    text-shadow: 4px 4px 4px var(--color3);
+    padding: 25px;
+}
+@media screen and (max-width:480px) {
+    .presentation-box-2{
+        display: block;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}
+.presentation-soiree-container{
+    display: flex;
+    padding: 20px;
+}
+.presentation-soiree-img{
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
+    height: 250px;
+    width: 250px;
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-soiree-img img{
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-img img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-soiree-texte{
+    padding: 25px;
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-texte{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+.presentation-soiree-bottom button{
+    margin: 25px;
+    padding: 25px;
+    background: blue;
+    color: white;
+    border-radius: 51000px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.presentation-soiree-bottom a :hover{
+    font-size: 1.7;
+    color: var(--color3);
+    background: var(--colorwhite);
+}
+
+
+.prestation-karaoke-tire{
+    padding: 35px;
+}
+.presentation-karaoke-container{
+    display: flex;
+    padding: 20px;
+}
+.presentation-karaoke-img{
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
+    height: 250px;
+    width: 250px;
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-karaoke-img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-karaoke-img img{
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-karaoke-img img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-karaoke-texte{
+    padding: 25px;
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    .presentation-karaoke-texte{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+.prestation-karaoke-tire{
+    padding: 35px;
+}
+.presentation-karaoke-bottom button{
+    margin: 25px;
+    padding: 25px;
+    background: blue;
+    color: white;
+    border-radius: 51000px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-karaoke-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.presentation-karaoke-bottom a :hover{
+    font-size: 1.7;
+    color: var(--color3);
+    background: var(--colorwhite);
+}
+/*----------------------------------------------------*/
+.info{
+    background-image: linear-gradient(180deg,black, #120366 );
+    color: white;
+    padding: 45px;
+}
+@media screen and (max-width:480px) {
+    .info{
+        padding: 10px;
+        margin: 0px;
+    }
+}
+.info-box{
+    background-image: linear-gradient(90deg, #2a06fa 0%, #6e2aff 100%);
+    padding: 50px; 
+    border-radius: 25px; 
+    margin: 50px;
+}
+@media screen and (max-width:480px) {
+    .info-box{
+        padding: 10px;
+        margin:0;
+    }
+}
+.info-descrip{
+    padding: 15px;
+    font-size: 2rem;
+    line-height: 50px;
+}
+.info-descrip p{
+    padding: 25px;
+    color: var(--color1);
+}
+.info-titre h3{
+    padding: 25px;
+    font-size: 4rem;
+    text-shadow: 5px 5px 3px var(--colorblack) ;;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+@media screen and (max-width:480px) {
+    .info-titre h3{
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+.info-bouton{
+    height: 150px;
+}
+.info-bouton button{
+    background: var(--color3);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 2rem;
+    margin: 40px;
+    border: 0;
+}
+.info-bouton button:hover{
+        font-size: 2.2rem ; 
+        color: var(--color4);  
+}
+
+footer{
+    background-image: linear-gradient(180deg, #120366,black );
+    color: white;
+    padding: 45px;
+}
+@media screen and (max-width:480px) {
+    footer {
+        padding: 5px;
+    }
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    font-size: 2rem;    
+}
+@media screen and (max-width:480px) {
+    .footer-container{
+        padding: 10px;
+        font-size: 1rem;
+        
+    }
+}
+.footer-container-left{
+    font-style: italic;
+    font-size: 4rem;
+     text-shadow: 5px 5px 3px black;
+     background-color: rgba(128, 128, 128, 0.164);
+   border-radius: 20px;
+   padding: 15px;
+}
+@media screen and (max-width:480px) {
+    .footer-container-left{
+        padding: 5px;
+        font-size: 2rem;
+    }
+}
+.footer-container-center{
+    padding: 5px;
+    
+}
+.footer-container-center li{
+    padding: 10px;
+    color: white;
+}
+.footer-container-right{
+   background-color: rgba(128, 128, 128, 0.164);
+   border-radius: 20px;
+   padding: 15px;
+}
+.footer-container-right img{
+    padding: 10px;
+    border-radius: 15px;
+}
+@media screen and (max-width:480px) {
+    .footer-container-right img{
+        padding: 5px;
+        height: 100px;
+    }
+}
+
+
+
+
