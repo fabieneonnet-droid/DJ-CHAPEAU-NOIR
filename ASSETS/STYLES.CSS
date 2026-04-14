@@ -19,8 +19,7 @@ header{
     .header-container{
         display: block;
         padding-top: 5px;
-    }
-    
+    }  
 }
 .header-tel-container{
     font-size: 6rem;
@@ -152,6 +151,19 @@ header{
     transform: scale(1);
     filter: blur(0);
   }
+}
+
+/* Cible directement le lien pour changer sa couleur */
+nav ul li a {
+    font-size: 20px;
+    color: yellow !important; /* Le !important force le jaune si une autre règle bloque */
+    text-decoration: none;    /* Enlève le soulignement bleu/violet */
+    font-size: 4rem;
+}
+
+/* Optionnel : change la couleur au survol pour que l'utilisateur sache qu'il peut cliquer */
+nav ul li a:hover {
+    color: white;
 }
 /*--------DESCRIPTIF----------*/
 .header-descritif{
