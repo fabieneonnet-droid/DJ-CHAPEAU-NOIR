@@ -1,10 +1,10 @@
-const form = document.querySelector("form");
-const inputs = document.querySelectorAll(
-  'input[type="text"], input[type="password"]',
-);
+//-----DINAMYQUE DU FOMULAIRE-----//
 
-// Initialisation des variables pour le contrôle final
-let pseudo, email, password, confirmPass;
+const inputs = document.querySelectorAll(
+  'input[type="text"],input[type= "email"], input[type= "tel"]',
+);
+// console.log(inputs);
+let namepseudo, surmane, email, tel;
 
 const errorDisplay = (tag, message, valid) => {
   const container = document.querySelector("." + tag + "-container");
@@ -22,13 +22,29 @@ const errorDisplay = (tag, message, valid) => {
 const nameChecker = (value) => {
   if (value.length > 0 && (value.length < 3 || value.length > 20)) {
     errorDisplay("name", "Le nom doit faire entre 3 et 20 caractères");
-    pseudo = null; // Changé de name à pseudo
+    namepseudo = null;
   } else if (!value.match(/^[a-zA-Z0-9_.-]*$/)) {
     errorDisplay("name", "Le nom ne doit pas contenir de caractères spéciaux");
-    pseudo = null;
+    namepseudo = null;
   } else {
     errorDisplay("name", "", true);
-    pseudo = value;
+    namepseudo = value;
+  }
+};
+
+const surnameChecker = (value) => {
+  if (value.length > 0 && (value.length < 3 || value.length > 20)) {
+    errorDisplay("surname", "Le prénom doit faire entre 3 et 20 caractères");
+    surmane = null;
+  } else if (!value.match(/^[a-zA-Z0-9_.-]*$/)) {
+    errorDisplay(
+      "surname",
+      "Le prénom ne doit pas contenir de caractères spéciaux",
+      (surmane = null),
+    );
+  } else {
+    errorDisplay("surname", "", true);
+    surmane = value;
   }
 };
 
@@ -42,32 +58,16 @@ const emailChecker = (value) => {
   }
 };
 
-const passwordChecker = (value) => {
-  // Retrait de la ligne progressBar
-  if (
-    !value.match(
-      /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/,
-    )
-  ) {
-    errorDisplay(
-      "password",
-      "Minimum 8 caractères, une majuscule, un chiffre et un spécial",
-    );
-    password = null;
+const telChecker = (value) => {
+  if (value.length !== 10 && value.length > 0) {
+    errorDisplay("tel", "Le numéro de téléphone doit avoir 10 caractères");
+    tel = null;
+  } else if (!value.match(/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/)) {
+    errorDisplay("tel", "Le numéro de téléphone doit avoir que des nombres");
+    tel = null;
   } else {
-    errorDisplay("password", "", true);
-    password = value;
-  }
-  if (confirmPass) confirmChecker(confirmPass);
-};
-
-const confirmChecker = (value) => {
-  if (value !== password || value === "") {
-    errorDisplay("confirm", "Les mots de passe ne correspondent pas");
-    confirmPass = false;
-  } else {
-    errorDisplay("confirm", "", true);
-    confirmPass = true;
+    errorDisplay("tel", "", true);
+    tel = value;
   }
 };
 
@@ -77,14 +77,14 @@ inputs.forEach((input) => {
       case "name":
         nameChecker(e.target.value);
         break;
+      case "surname":
+        surnameChecker(e.target.value);
+        break;
       case "email":
         emailChecker(e.target.value);
         break;
-      case "password":
-        passwordChecker(e.target.value);
-        break;
-      case "confirm":
-        confirmChecker(e.target.value);
+      case "tel":
+        telChecker(e.target.value);
         break;
       default:
         null;
@@ -92,21 +92,48 @@ inputs.forEach((input) => {
   });
 });
 
-form.addEventListener("submit", (e) => {
+//-----ENVOI DU FORMULAIRE--------//
+
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  if (pseudo && email && password && confirmPass) {
-    const data = { pseudo, email, password };
-    console.log(data);
+  nameChecker(document.getElementById("name").value);
+  surnameChecker(document.getElementById("surname").value);
+  emailChecker(document.getElementById("email").value);
+  telChecker(document.getElementById("tel").value);
 
-    inputs.forEach((input) => (input.value = ""));
+  if (nom && surname && email && tel) {
+    const data = new FormData(e.target);
 
-    pseudo = null;
-    email = null;
-    password = null;
-    confirmPass = null;
-    alert("Inscription validée !");
+    try {
+      const response = await fetch(e.target.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Merci ! Votre message a été envoyé.");
+        form.reset();
+        nom = surname = email = tel = null;
+      } else {
+        alert(
+          "Erreur serveur : Vérifiez que votre e-mail est confirmé sur Formspree.",
+        );
+      }
+    } catch (error) {
+      alert("Oups ! Un problème réseau est survenu.");
+    }
   } else {
-    alert("Veuillez remplir correctement les champs");
+    alert("Veuillez remplir correctement les champs avant d'envoyer.");
   }
 });
+const data = {
+  name: nom,
+  surname: surname,
+  email: email,
+  tel: tel,
+};
+//-------------------------------------------------------------------//
