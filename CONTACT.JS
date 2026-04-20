@@ -94,46 +94,49 @@ inputs.forEach((input) => {
 
 //-----ENVOI DU FORMULAIRE--------//
 
+const form = document.querySelector("form");
+
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  nameChecker(document.getElementById("name").value);
-  surnameChecker(document.getElementById("surname").value);
-  emailChecker(document.getElementById("email").value);
-  telChecker(document.getElementById("tel").value);
+  if (namepseudo && surmane && email && tel) {
+    const data = {
+      namepseudo,
+      surmane,
+      email,
+      tel,
+    };
 
-  if (nom && surname && email && tel) {
-    const data = new FormData(e.target);
+    console.log("Données prêtes :", data);
 
     try {
       const response = await fetch(e.target.action, {
         method: "POST",
-        body: data,
         headers: {
+          "Content-Type": "application/json",
           Accept: "application/json",
         },
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        alert("Merci ! Votre message a été envoyé.");
-        form.reset();
-        nom = surname = email = tel = null;
+        alert("Votre message à été envoyé avec succès  !");
+
+        inputs.forEach((input) => (input.value = ""));
+        namepseudo = null;
+        surmane = null;
+        email = null;
+        tel = null;
       } else {
-        alert(
-          "Erreur serveur : Vérifiez que votre e-mail est confirmé sur Formspree.",
-        );
+        alert("Erreur lors de l'envoi au serveur.");
       }
     } catch (error) {
-      alert("Oups ! Un problème réseau est survenu.");
+      console.error("Erreur réseau :", error);
+      alert("Impossible de joindre le serveur.");
     }
   } else {
-    alert("Veuillez remplir correctement les champs avant d'envoyer.");
+    alert("Veuillez remplir correctement tous les champs");
   }
 });
-const data = {
-  name: nom,
-  surname: surname,
-  email: email,
-  tel: tel,
-};
+
 //-------------------------------------------------------------------//
