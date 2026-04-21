@@ -3,8 +3,9 @@
 const inputs = document.querySelectorAll(
   'input[type="text"],input[type= "email"], input[type= "tel"]',
 );
+const messageArea = document.getElementById("mess");
 // console.log(inputs);
-let namepseudo, surmane, email, tel;
+let namepseudo, surmane, email, tel, mess;
 
 const errorDisplay = (tag, message, valid) => {
   const container = document.querySelector("." + tag + "-container");
@@ -71,6 +72,9 @@ const telChecker = (value) => {
   }
 };
 
+messageArea.addEventListener("input", (e) => {
+  mess = e.target.value;
+});
 inputs.forEach((input) => {
   input.addEventListener("input", (e) => {
     switch (e.target.id) {
@@ -99,12 +103,13 @@ const form = document.querySelector("form");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  if (namepseudo && surmane && email && tel) {
+  if (namepseudo && surmane && email && tel && mess) {
     const data = {
       namepseudo,
       surmane,
       email,
       tel,
+      mess,
     };
 
     console.log("Données prêtes :", data);
