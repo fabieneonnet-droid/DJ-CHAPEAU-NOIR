@@ -1,3 +1,33 @@
 body{
     background: url(./IMG/fond-brouillard-dynamique-realiste_23-2149111508.webp) fixed center/cover;
 }
+.bapteme-up{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.bapteme-img-left img{
+    max-width: 350px;
+    border-radius: 15px;
+
+}
+.bapteme-img-right img{
+    max-width: 350px;
+    border-radius: 15px;
+}
+.bapteme-titre{
+
+    color: var(--colorwhite);
+    text-shadow: 4px 4px 4px var(--color3);
+    font-size: 6rem;
+    padding: 25px;
+}
+.bapteme-descriptif{
+    padding: 40px ;
+    font-size: 2rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: rgb(201, 189, 189);
+}
+.bapteme-descriptif p{
+    margin: 20px;
+}

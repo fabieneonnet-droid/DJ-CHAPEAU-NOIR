@@ -1,16 +1,16 @@
 
 
 nav{
-    margin: 25px;
+    margin: 80px;
     padding: 15px;
     border-radius: 15px;
     box-shadow: -2px -2px 0px 0px rgb(255, 255, 255);
     background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.445) 0%, rgba(255, 255, 255, 0) 100%);
 }
 @media screen and (max-width:480px) {
-    .nav{
+    nav{
         padding: 5px;
-        margin: 0;
+        margin: 10px;
     }
 }
 a{
@@ -18,12 +18,10 @@ a{
 }
 
 ul{
+
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
-    
-
-    
+    list-style-type: none;    
 }
 
 li{
@@ -37,7 +35,7 @@ li{
 @media screen and (max-width:480px) {
     li{
         padding: 10px;
-        font-size: 10rem;
+        font-size: 2rem;
     }
 }
 

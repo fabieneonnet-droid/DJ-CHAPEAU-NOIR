@@ -5,6 +5,11 @@ header{
     background: url(./IMG/essai-carte-visite-didier.webp) fixed center/cover;
     height: 100vh;
 }
+@media screen and (max_width : 500px){
+    header{
+        height: 750px;
+    }
+}
 
 
 .header-container{
@@ -59,9 +64,10 @@ header{
     .container-name{
         
         padding: 15px;
-        margin: 50px 5px;
-        min-width: 350px;
-        min-height: 240px;
+        margin: 25px 5px;
+        min-width: 240px;
+        min-height: 180px;
+        padding: 10px;
     }
 }
 
@@ -78,8 +84,8 @@ header{
 @media screen and (max-width : 480px){
     .dj-text{
         font-size: 2rem;
-        margin-bottom: 30px;
-        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 }
 
@@ -188,7 +194,7 @@ nav ul li a:hover {
     .header-descritif p{
         margin: 10px;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
         font-weight: normal;
     }
@@ -223,7 +229,6 @@ nav ul li a:hover {
 }
 /*-----------NAV------------*/
 .header-nav-container{
-    line-height: 2rem;
     font-size: 6rem;
     align-content: space-around;
     line-height: 1.4;
@@ -231,9 +236,8 @@ nav ul li a:hover {
 }
 @media screen and (max-width : 480px){
     .header-nav-container{
-        font-size: 2rem;
-        /* line-height: 45px; */
-        /* display: none; */
+        font-size: 1rem;
+        
             }
     
 }
@@ -250,9 +254,9 @@ nav ul li a:hover {
 .header-nav-container li:hover{
     font-size: 5.8rem;
 }
-@media screen and (max-width : 480px){
-    .header-nav-container li{
-    font-size: 1.5rem;  
+@media screen and (max-width : 500px){
+    .header-nav-container ul li a{
+    font-size: 2rem;  
 }
 }
 
@@ -263,7 +267,8 @@ nav ul li a:hover {
 }
 @media screen and (max-width : 480px){
     .didier{
-        padding: 5px;
+        padding: 0px;
+        margin: 0;
     }
 }
 @media screen and (max-width : 480px){
@@ -407,7 +412,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 60% 40%;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .description-box{
         display: block;
     }
@@ -431,7 +436,7 @@ nav ul li a:hover {
 }
 @media screen and (max-width : 480px){
     .description-texte{
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 25px;
 
     }
@@ -498,8 +503,8 @@ nav ul li a:hover {
 }
 @media screen and (max-width:480px){
     .presentation-mariage-img{
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
     }
 }
 .presentation-mariage-img img{
@@ -507,8 +512,8 @@ nav ul li a:hover {
 }
 @media screen and (max-width:480px){
     .presentation-mariage-img img{
-        height: 140px;
-        width: 140px;
+        height: 120px;
+        width: 120px;
     }
 }
 #mariage{
@@ -803,6 +808,13 @@ nav ul li a:hover {
 .info-descrip p{
     padding: 25px;
     color: var(--color1);
+}
+@media screen and (max-width:480px) {
+    .info-descrip p{
+        padding: 10px;
+        font-size: 1rem;
+        line-height: 20px;
+    }
 }
 .info-titre h3{
     padding: 25px;
