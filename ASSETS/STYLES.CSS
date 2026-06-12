@@ -20,19 +20,26 @@ header{
     letter-spacing: 2px;
     
 }    
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .header-container{
         display: block;
         padding-top: 5px;
     }  
 }
+
 .header-tel-container{
     font-size: 6rem;
     align-content: center;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .header-tel-container{
         display: none;
+        padding-top: 5px;
+    }  
+}
+@media screen and (max-width : 1500px){
+    .header-tel-container{
+        font-size: 3rem;
     }
 }
 .header-tel-container h3{
@@ -48,6 +55,7 @@ header{
     font-size: 7.5rem;
 }
 
+
 /*------------------LOGO-------------------*/
 /* Conteneur */
 .container-name {
@@ -59,7 +67,7 @@ header{
   min-height: 440px;
   margin: 20px;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1750px){
     .container-name{
         
         padding: 15px;
@@ -80,9 +88,9 @@ header{
     0 0 8px #1524f0,
     0 0 20px rgba(255, 255, 255, 0.9);
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1750px){
     .dj-text{
-        font-size: 2rem;
+        font-size: 4rem;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -98,9 +106,9 @@ header{
     0 0 10px #1e90ff,
     0 0 25px rgba(30, 144, 255, 0.9);
 }
-@media  screen and (max-width : 480px) {
+@media  screen and (max-width : 1750px) {
     .name-text{
-        font-size: 3rem;
+        font-size: 5rem;
     }
     
 }
@@ -159,16 +167,55 @@ header{
 
 /* Cible directement le lien pour changer sa couleur */
 nav ul li a {
-    font-size: 20px;
+   
     color: yellow !important; /* Le !important force le jaune si une autre règle bloque */
     text-decoration: none;    /* Enlève le soulignement bleu/violet */
     font-size: 4rem;
+}
+@media screen and(max-width:1200px) {
+    .header-nav-container {
+        display: none;
+    }
+    
 }
 
 /* Optionnel : change la couleur au survol pour que l'utilisateur sache qu'il peut cliquer */
 nav ul li a:hover {
     color: white;
 }
+
+    /*-----------NAV------------*/
+.header-nav-container{
+    font-size: 6rem;
+    align-content: space-around;
+    line-height: 1.4;
+    color: var(--color4);
+}
+@media screen and (max-width : 1200px){
+    .header-nav-container{
+        display: none;
+            }
+    
+}
+.header-nav-container li{
+    text-shadow: 4px 4px 4px var(--color3);
+     background: rgba(128, 128, 128, 0.08);
+     border-radius: 10px;
+     cursor: pointer;
+    position: relative;
+    transition: 0.4s ease;
+    color: var(--color4);
+}
+
+.header-nav-container li:hover{
+    font-size: 7.5rem;
+}
+@media screen and (max-width : 500px){
+    .header-nav-container ul li a{
+    font-size: 2rem;  
+}
+}
+
 /*--------DESCRIPTIF----------*/
 .header-descritif{
     padding: 0px;
@@ -226,37 +273,7 @@ nav ul li a:hover {
     opacity: 0.8;
     font-size: 4,5rem; 
 }
-/*-----------NAV------------*/
-.header-nav-container{
-    font-size: 6rem;
-    align-content: space-around;
-    line-height: 1.4;
-    color: var(--color4);
-}
-@media screen and (max-width : 480px){
-    .header-nav-container{
-        font-size: 1rem;
-            }
-    
-}
-.header-nav-container li{
-    text-shadow: 4px 4px 4px var(--color3);
-     background: rgba(128, 128, 128, 0.08);
-     border-radius: 10px;
-     cursor: pointer;
-    position: relative;
-    transition: 0.4s ease;
-    color: var(--color4);
-}
 
-.header-nav-container li:hover{
-    font-size: 7.5rem;
-}
-@media screen and (max-width : 500px){
-    .header-nav-container ul li a{
-    font-size: 2rem;  
-}
-}
 
 .Didier{
     background: var(--colorblack);
@@ -283,7 +300,7 @@ nav ul li a:hover {
     font-size: 5rem;
     text-transform: uppercase;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .titre-ambiance{
         font-size: 2rem;
     }
@@ -295,10 +312,10 @@ nav ul li a:hover {
     font-weight: bold;
     color: red;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .texte-ambiance{
-        font-size: 1rem;
-        line-height: 15px;
+        font-size: 2rem;
+        line-height: 35px;
     }
 }
 .reseau-ambiance{
@@ -313,7 +330,7 @@ nav ul li a:hover {
     color:blue;
     transition: 0.3s;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .reseau-ambiance-facebook a{
         font-size: 4rem;   
     }
@@ -330,6 +347,11 @@ nav ul li a:hover {
     padding: 15px;
     font-size: 3rem;
 }
+@media screen and (max-width : 1200px){
+    .reseau-ambiance-facebook p{
+        font-size: 2rem;   
+    }
+}
 
 .reseau-ambiance-instagram a{
     border-radius: 50px;
@@ -338,7 +360,7 @@ nav ul li a:hover {
     transition: 0.5s; 
     padding: 30px;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .reseau-ambiance-instagram a{
         font-size: 4rem;   
     }
@@ -356,6 +378,11 @@ nav ul li a:hover {
     padding: 15px;
     font-size: 3rem;
 }
+@media screen and (max-width : 1200px){
+    .reseau-ambiance-instagram p{
+        font-size: 2rem;   
+    }
+}
 .reseau-ambiance-tiktok a{
     border-radius: 15px;
     font-size: 6rem;
@@ -364,7 +391,7 @@ nav ul li a:hover {
     background: white;
 
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .reseau-ambiance-tiktok a{
         font-size: 4rem;   
     }
@@ -382,6 +409,11 @@ nav ul li a:hover {
     padding: 15px;
     font-size: 3rem;
 }
+@media screen and (max-width : 1200px){
+    .reseau-ambiance-tiktok p{
+        font-size: 2rem;   
+    }
+}
 .ambiance-chiffre-container{
     background-image: linear-gradient(90deg, #2a06fa 0%, #6e2aff 100%);
     box-shadow: -1px -1px 0px 0px rgba(255, 255, 255, 0.678);
@@ -395,7 +427,7 @@ nav ul li a:hover {
 .ambiance-chiffre-container h4{
     font-size: 4rem;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .ambiance-chiffre-container h4{
         font-size: 2rem;   
     }
@@ -405,9 +437,9 @@ nav ul li a:hover {
     padding: 0px;
     font-size: 3rem;
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width : 1200px){
     .ambiance-chiffre-container p{
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: normal;   
         padding: 5px 20px;
     }
@@ -483,10 +515,10 @@ nav ul li a:hover {
     font-size: 6rem;
     padding: 100px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
     .prestation-titre {
         padding:0;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -498,11 +530,12 @@ nav ul li a:hover {
     padding: 25px;
     margin-bottom: 20px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
     .presentation-box-1{
         display: block;
         padding: 5px;
         margin-bottom: 5px;
+        text-align: center;
     }
 }
 .presentation-mariage-container{
@@ -515,26 +548,16 @@ nav ul li a:hover {
     width: 250px;
     border-radius: 35px;
 }
-@media screen and (max-width:480px){
-    .presentation-mariage-img{
-        height: 120px;
-        width: 120px;
-    }
-}
+
 .presentation-mariage-img img{
     border-radius: 35px;
 }
-@media screen and (max-width:480px){
-    .presentation-mariage-img img{
-        height: 120px;
-        width: 120px;
-    }
-}
+
 #mariage{
     opacity: 0;
     transition: 2s ease-in-out;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:1200px){
     #mariage{
        opacity: 1;
        transition: 0s;
@@ -544,7 +567,7 @@ nav ul li a:hover {
     padding: 25px;
     font-size: 3rem;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:1200px){
     .presentation-mariage-texte{
         font-size: 1.5rem;
         padding: 20px;
@@ -560,13 +583,7 @@ nav ul li a:hover {
     transition: 0.5s;
     border: none;
 }
-@media screen and (max-width:480px){
-    .presentation-mariage-bottom button {
-        font-size: 1rem;
-        margin-top: 10px;
-        padding: 10px;
-    }
-}
+
 .presentation-mariage-bottom a :hover{
     font-size: 1.7;
     color: var(--color3);
@@ -584,13 +601,6 @@ nav ul li a:hover {
 #anniversaire{
     opacity: 0;
     transition: 2s ease-in-out;
-}
-
-@media screen and (max-width:480px){
-    #anniversaire{
-       opacity: 1;
-       transition: 0s;
-    }
 }
 
 .presentation-anniversaire-img{
@@ -663,11 +673,12 @@ nav ul li a:hover {
     text-shadow: 4px 4px 4px var(--color3);
     padding: 25px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
     .presentation-box-2{
         display: block;
-        padding: 10px;
+        padding: 5px;
         margin-bottom: 5px;
+        text-align: center;
     }
 }
 .presentation-soiree-container{
@@ -859,7 +870,7 @@ nav ul li a:hover {
     color: white;
     padding: 45px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
     .info{
         padding: 10px;
         margin: 0px;
@@ -871,7 +882,7 @@ nav ul li a:hover {
     border-radius: 25px; 
     margin: 50px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
     .info-box{
         padding: 10px;
         margin:0;
@@ -887,11 +898,11 @@ nav ul li a:hover {
     padding: 25px;
     color: var(--color1);
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
     .info-descrip p{
         padding: 10px;
-        font-size: 1rem;
-        line-height: 20px;
+        font-size: 2rem;
+        line-height: 40px;
     }
 }
 .info-titre h3{
@@ -901,7 +912,7 @@ nav ul li a:hover {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1200px) {
     .info-titre h3{
         padding: 10px;
         font-size: 2rem;
