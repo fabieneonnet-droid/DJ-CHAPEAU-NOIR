@@ -69,7 +69,6 @@ header{
 }
 @media screen and (max-width : 1750px){
     .container-name{
-        
         padding: 15px;
         margin: 25px 5px;
         min-width: 240px;
@@ -95,6 +94,11 @@ header{
         margin-top: 20px;
     }
 }
+@media  screen and (max-width : 600px) {
+    .dj-text{
+        font-size: 3rem;
+    }
+}
 
 /* Nom – bleu */
 .name-text {
@@ -110,7 +114,11 @@ header{
     .name-text{
         font-size: 5rem;
     }
-    
+}
+@media  screen and (max-width : 600px) {
+    .name-text{
+        font-size: 3rem;
+    }
 }
 
 /* ANIMATION – jaune très fort */
@@ -124,7 +132,7 @@ header{
     0 0 8px #1524f0,
     0 0 20px rgba(255, 255, 255, 0.9);
 }
-@media screen and (max-width : 480px){
+@media screen and (max-width :600px){
     .animation-text{
         font-size: 2rem;
         margin-top: -10px;
@@ -318,6 +326,12 @@ nav ul li a:hover {
         line-height: 35px;
     }
 }
+@media screen and (max-width : 600px){
+    .texte-ambiance{
+        font-size: 1rem;
+        line-height: 35px;
+    }
+}
 .reseau-ambiance{
     display: grid;
     grid-template-columns: 33% 34% 33%;
@@ -335,7 +349,11 @@ nav ul li a:hover {
         font-size: 4rem;   
     }
 }
-
+@media screen and (max-width : 600px){
+    .reseau-ambiance-facebook a{
+        font-size: 2rem;   
+    }
+}
 .reseau-ambiance-facebook a :hover{
     transform: scale(1.1);
     color: white;
@@ -352,7 +370,11 @@ nav ul li a:hover {
         font-size: 2rem;   
     }
 }
-
+@media screen and (max-width : 600px){
+    .reseau-ambiance-facebook p{
+        font-size: 0.5rem;   
+    }
+}
 .reseau-ambiance-instagram a{
     border-radius: 50px;
     font-size: 6rem;
@@ -363,6 +385,11 @@ nav ul li a:hover {
 @media screen and (max-width : 1200px){
     .reseau-ambiance-instagram a{
         font-size: 4rem;   
+    }
+}
+@media screen and (max-width : 600px){
+    .reseau-ambiance-instagram a{
+        font-size: 2rem;   
     }
 }
 .reseau-ambiance-instagram a :hover{
@@ -383,6 +410,11 @@ nav ul li a:hover {
         font-size: 2rem;   
     }
 }
+@media screen and (max-width : 600px){
+    .reseau-ambiance-instagram p{
+        font-size: 1rem;   
+    }
+}
 .reseau-ambiance-tiktok a{
     border-radius: 15px;
     font-size: 6rem;
@@ -396,7 +428,11 @@ nav ul li a:hover {
         font-size: 4rem;   
     }
 }
-
+@media screen and (max-width : 600px){
+    .reseau-ambiance-tiktok a{
+        font-size: 2rem;   
+    }
+}
 .reseau-ambiance-tiktok a :hover{
     font-size: 5.5rem;
     color: rgb(252, 251, 251);
@@ -412,6 +448,11 @@ nav ul li a:hover {
 @media screen and (max-width : 1200px){
     .reseau-ambiance-tiktok p{
         font-size: 2rem;   
+    }
+}
+@media screen and (max-width : 600px){
+    .reseau-ambiance-tiktok p{
+        font-size: 1rem;   
     }
 }
 .ambiance-chiffre-container{
