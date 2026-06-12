@@ -27,7 +27,7 @@ header{
     }  
 }
 .header-tel-container{
-    font-size: 10rem;
+    font-size: 8rem;
     align-content: center;
 }
 @media screen and (max-width : 480px){
@@ -45,7 +45,7 @@ header{
     text-shadow: 4px 4px 4px var(--color3)
 }
 .header-tel-container a :hover{
-    font-size: 9rem;
+    font-size: 7.5rem;
 }
 
 /*------------------LOGO-------------------*/
@@ -199,7 +199,7 @@ nav ul li a:hover {
 }
 .button-contact{
     margin: 100px;
-    margin-top: 600px;
+    margin-top: 400px;
     font-size: 3rem;     
 }
 @media screen and (max-width : 480px){
@@ -228,7 +228,7 @@ nav ul li a:hover {
 }
 /*-----------NAV------------*/
 .header-nav-container{
-    font-size: 10rem;
+    font-size: 8rem;
     align-content: space-around;
     line-height: 1.4;
     color: var(--color4);
@@ -251,7 +251,7 @@ nav ul li a:hover {
 }
 
 .header-nav-container li:hover{
-    font-size: 9rem;
+    font-size: 7.5rem;
 }
 @media screen and (max-width : 500px){
     .header-nav-container ul li a{
