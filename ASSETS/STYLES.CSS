@@ -27,7 +27,7 @@ header{
     }  
 }
 .header-tel-container{
-    font-size: 8rem;
+    font-size: 6rem;
     align-content: center;
 }
 @media screen and (max-width : 480px){
@@ -199,7 +199,7 @@ nav ul li a:hover {
 }
 .button-contact{
     margin: 100px;
-    margin-top: 400px;
+    margin-top: 250px;
     font-size: 3rem;     
 }
 @media screen and (max-width : 480px){
@@ -228,7 +228,7 @@ nav ul li a:hover {
 }
 /*-----------NAV------------*/
 .header-nav-container{
-    font-size: 8rem;
+    font-size: 6rem;
     align-content: space-around;
     line-height: 1.4;
     color: var(--color4);
@@ -236,7 +236,6 @@ nav ul li a:hover {
 @media screen and (max-width : 480px){
     .header-nav-container{
         font-size: 1rem;
-        
             }
     
 }
@@ -441,7 +440,7 @@ nav ul li a:hover {
 }
 .description-texte{
         padding: 40px ;
-        font-size: 4rem;
+        font-size: 2rem;
         line-height: 65px;
         font-weight: bold;
         color: white;
