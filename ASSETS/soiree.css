@@ -1,34 +1,35 @@
 body{
     background: url(./IMG/fond-brouillard-dynamique-realiste_23-2149111508.webp) fixed center/cover;
 }
-.anniv-up{
+.soiree-up{
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
-.aniversaire-img-left img{
+.soiree-img-left img{
     max-width: 350px;
     border-radius: 15px;
 
 }
-.aniversaire-img-right img{
+.soiree-img-right img{
     max-width: 350px;
     border-radius: 15px;
 }
-.anniversaire-titre{
+.soiree-titre{
 
     color: var(--colorwhite);
     text-shadow: 4px 4px 4px var(--color3);
     font-size: 6rem;
     padding: 25px;
 }
-.anniversaire-descriptif{
+.soiree-descriptif{
     padding: 40px ;
-    font-size: 2rem;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 70px;
     font-weight: bold;
-    color: rgb(201, 189, 189);
+    color: white;
 }
-.anniversaire-descriptif p{
+.soiree-descriptif p{
     margin: 20px;
+    padding: 60px;
+    text-shadow: 2px 2px 2px red; 
 }
-

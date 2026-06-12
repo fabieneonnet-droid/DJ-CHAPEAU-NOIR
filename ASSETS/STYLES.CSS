@@ -15,10 +15,10 @@ header{
 .header-container{
      display: grid;
     grid-template-columns: 25% 50% 25%;
-    padding: 30px;
+    padding: 10px;
     color: var(--colorwhite);
     letter-spacing: 2px;
-    padding-top: 145px;
+    
 }    
 @media screen and (max-width : 480px){
     .header-container{
@@ -27,7 +27,7 @@ header{
     }  
 }
 .header-tel-container{
-    font-size: 6rem;
+    font-size: 10rem;
     align-content: center;
 }
 @media screen and (max-width : 480px){
@@ -45,20 +45,19 @@ header{
     text-shadow: 4px 4px 4px var(--color3)
 }
 .header-tel-container a :hover{
-    font-size: 6rem;
+    font-size: 9rem;
 }
 
 /*------------------LOGO-------------------*/
 /* Conteneur */
 .container-name {
-  background: rgba(0, 0, 0, 0.45);
+  
   padding: 50px 50px;
-  border-radius: 25px;
   backdrop-filter: blur(6px);
   text-align: center;
   min-width: 550px;
   min-height: 440px;
-  margin: 50px;
+  margin: 20px;
 }
 @media screen and (max-width : 480px){
     .container-name{
@@ -108,15 +107,14 @@ header{
 
 /* ANIMATION – jaune très fort */
 .animation-text {
-  font-family: 'League Script', cursive;
+  
   font-size: 5rem;
   letter-spacing: 4px;
-  margin-top: -40px;
+  margin-top: -30px;
   color: #ffd700;
-  text-shadow:
-    0 0 10px #ffd700,
-    0 0 30px #ffd700,
-    0 0 60px rgba(255, 215, 0, 1);
+   text-shadow:
+    0 0 8px #1524f0,
+    0 0 20px rgba(255, 255, 255, 0.9);
 }
 @media screen and (max-width : 480px){
     .animation-text{
@@ -201,6 +199,7 @@ nav ul li a:hover {
 }
 .button-contact{
     margin: 100px;
+    margin-top: 600px;
     font-size: 3rem;     
 }
 @media screen and (max-width : 480px){
@@ -229,7 +228,7 @@ nav ul li a:hover {
 }
 /*-----------NAV------------*/
 .header-nav-container{
-    font-size: 6rem;
+    font-size: 10rem;
     align-content: space-around;
     line-height: 1.4;
     color: var(--color4);
@@ -252,7 +251,7 @@ nav ul li a:hover {
 }
 
 .header-nav-container li:hover{
-    font-size: 5.8rem;
+    font-size: 9rem;
 }
 @media screen and (max-width : 500px){
     .header-nav-container ul li a{
@@ -292,10 +291,10 @@ nav ul li a:hover {
 }
 .texte-ambiance{
     padding: 40px ;
-    font-size: 2.5rem;
-    line-height: 50px;
+    font-size: 3.5rem;
+    line-height: 60px;
     font-weight: bold;
-    color: var(--color5);
+    color: red;
 }
 @media screen and (max-width : 480px){
     .texte-ambiance{
@@ -327,6 +326,11 @@ nav ul li a:hover {
     text-shadow: 8px 8px 50px blue ;
     transition: 0.5s;   
 }
+.reseau-ambiance-facebook p{
+    color: white;
+    padding: 15px;
+    font-size: 3rem;
+}
 
 .reseau-ambiance-instagram a{
     border-radius: 50px;
@@ -347,13 +351,19 @@ nav ul li a:hover {
     background: linear-gradient(45deg,#f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     padding: 5px 10px;
     border-radius: 20px;
-    
+}
+.reseau-ambiance-instagram p{
+    color: white;
+    padding: 15px;
+    font-size: 3rem;
 }
 .reseau-ambiance-tiktok a{
-    border-radius: 50px;
+    border-radius: 15px;
     font-size: 6rem;
-    color:rgb(248, 248, 245);
-    transition: 0.4s; 
+    color:red;
+    transition: 0.4s;
+    background: white;
+
 }
 @media screen and (max-width : 480px){
     .reseau-ambiance-tiktok a{
@@ -363,11 +373,15 @@ nav ul li a:hover {
 
 .reseau-ambiance-tiktok a :hover{
     font-size: 5.5rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 4px 4px 0px red,
-                -4px -4px 0px #25f4ee;
+    color: rgb(252, 251, 251);
+    background: red;
     transition: 0.3s;  
-    
+    border-radius: 15px;
+}
+.reseau-ambiance-tiktok p{
+    color: white;
+    padding: 15px;
+    font-size: 3rem;
 }
 .ambiance-chiffre-container{
     background-image: linear-gradient(90deg, #2a06fa 0%, #6e2aff 100%);
@@ -390,7 +404,7 @@ nav ul li a:hover {
 .ambiance-chiffre-container p{
     font-weight: bold;
     padding: 0px;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 @media screen and (max-width : 480px){
     .ambiance-chiffre-container p{
@@ -427,12 +441,13 @@ nav ul li a:hover {
 }
 .description-texte{
         padding: 40px ;
-        font-size: 3rem;
-        line-height: 55px;
+        font-size: 4rem;
+        line-height: 65px;
         font-weight: bold;
-        color: var(--color5);
+        color: white;
         display: flex;
-        align-content: center;     
+        align-content: center;   
+         text-shadow: 2px 2px 2px   red;
 }
 @media screen and (max-width : 480px){
     .description-texte{
@@ -571,12 +586,14 @@ nav ul li a:hover {
     opacity: 0;
     transition: 2s ease-in-out;
 }
+
 @media screen and (max-width:480px){
     #anniversaire{
        opacity: 1;
        transition: 0s;
     }
 }
+
 .presentation-anniversaire-img{
     box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
     height: 250px;
@@ -642,7 +659,7 @@ nav ul li a:hover {
 
 .presentation-box-2{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 34% 33%;
     color: var(--color4);
     text-shadow: 4px 4px 4px var(--color3);
     padding: 25px;
@@ -711,6 +728,67 @@ nav ul li a:hover {
     color: var(--color3);
     background: var(--colorwhite);
 }
+
+/*-----------------------------------------------------------------------------------------*/
+.presentation-soiree-container{
+    display: flex;
+    padding: 20px;
+}
+.presentation-soiree-img{
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
+    height: 250px;
+    width: 250px;
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-soiree-img img{
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-img img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-soiree-texte{
+    padding: 25px;
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-texte{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+.presentation-soiree-bottom button{
+    margin: 25px;
+    padding: 25px;
+    background: blue;
+    color: white;
+    border-radius: 51000px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-soiree-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.presentation-soiree-bottom a :hover{
+    font-size: 1.7;
+    color: var(--color3);
+    background: var(--colorwhite);
+}
+
+
 
 
 .prestation-karaoke-tire{
@@ -802,8 +880,9 @@ nav ul li a:hover {
 }
 .info-descrip{
     padding: 15px;
-    font-size: 2rem;
-    line-height: 50px;
+    font-size: 3.5rem;
+    line-height: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .info-descrip p{
     padding: 25px;
@@ -836,7 +915,7 @@ nav ul li a:hover {
     background: var(--color3);
     padding: 15px;
     border-radius: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 40px;
     border: 0;
 }

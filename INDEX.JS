@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       typeText(name, "Chapeau-noir", 120, () => {
         setTimeout(() => {
-          typeText(animation, "Animation",20);
+          typeText(animation, "Animation", 20);
         }, 50);
       });
     }, 300);
@@ -34,21 +34,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //---------------------------------------------------------------
 //---PRESTATION---//
-const image1 = document.querySelector("#mariage")
-const image2 = document.querySelector("#anniversaire")
-
+const image1 = document.querySelector("#mariage");
+const image2 = document.querySelector("#anniversaire");
+const image3 = document.querySelector("soiree");
+const image4 = document.querySelector("karaoke");
 
 let playOne = true;
 // console.log(image1);
-window.addEventListener("scroll",()=>{
-  if (image1){
-    let scrollValue = ((window.scrollY + window.innerHeight) / document.body.offsetHeight);
-    
-  
-    if(scrollValue>0.70){
-      
+window.addEventListener("scroll", () => {
+  if (image1) {
+    let scrollValue =
+      (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+
+    if (scrollValue > 0.7) {
       image1.style.opacity = 1;
-      image2.style.opacity=1;  
+      image2.style.opacity = 1;
+      image3.style.opacity = 1;
+      image4.style.opacity = 1;
       playOne = false;
     }
   }

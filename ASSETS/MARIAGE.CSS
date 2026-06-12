@@ -51,11 +51,13 @@ body{
 }
 .mariage-descriptif{
     padding: 40px ;
-    font-size: 2rem;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 70px;
     font-weight: bold;
-    color: rgb(201, 189, 189);
+    color: white;
 }
 .mariage-descriptif p{
     margin: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 2px red; 
 }

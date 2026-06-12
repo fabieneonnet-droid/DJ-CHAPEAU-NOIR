@@ -23,13 +23,15 @@ body{
 }
 .karaoke-descriptif{
     padding: 40px ;
-    font-size: 2rem;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 70px;
     font-weight: bold;
-    color: rgb(201, 189, 189);
+    color: white;
 }
 .karaoke-descriptif p{
     margin: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 2px red; 
 }
 .diaporama-container {
     width: 100%;
@@ -39,27 +41,3 @@ body{
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-.diaporama {
-    display: flex;
-    width: 500%; /* 5 images x 100% */
-    animation: slide 20s infinite ease-in-out;
-}
-
-.diaporama img {
-    width: 20%; /* Chaque image prend 1/5ème de la largeur du parent */
-    height: 400px; /* Ajustez la hauteur selon vos besoins */
-    object-fit: cover; /* Évite de déformer les images */
-}
-
-/* L'animation de défilement */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-20%); } /* Image 2 */
-    45% { transform: translateX(-20%); }
-    50% { transform: translateX(-40%); } /* Image 3 */
-    70% { transform: translateX(-40%); }
-    75% { transform: translateX(-60%); } /* Image 4 */
-    95% { transform: translateX(-60%); }
-    100% { transform: translateX(-80%); } /* Retour image 1 (la copie) */
-}

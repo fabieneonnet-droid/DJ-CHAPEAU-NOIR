@@ -19,7 +19,7 @@ body {
     align-items: center;
 }
 .presentation-titre h1{
-    font-size: 5rem;
+    font-size: 7rem;
     color: yellow;
     text-shadow: 4px 4px 4px blue;
     padding: -20px;
@@ -31,7 +31,10 @@ body {
 }
 
 .presentation-texte p{
-    color: rgb(201, 189, 189);
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px red;
+    padding-bottom: 70px;
 }
 @media screen and (max-width : 500px) {
   .presentation-texte p{
@@ -65,6 +68,7 @@ form {
 
 label {
   letter-spacing: 1px;
+  
 }
 input[type="text"],
 input[type="password"],
@@ -78,7 +82,7 @@ textarea {
   width: 100%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding-left: 10px;
   transition: 0.2s;
 }
@@ -136,10 +140,10 @@ input[type="submit"]{
   width: 50%; 
   margin-top: 20px; 
   border: none;
-  background: linear-gradient(65deg, #e9f548, #3d5aff);
+  background: blue;
   width: 50%;
   margin: 12px auto 0;
-  padding: 10px;
+  padding: 20px;
   border-radius: 150px;
   font-size: 1.2rem;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);

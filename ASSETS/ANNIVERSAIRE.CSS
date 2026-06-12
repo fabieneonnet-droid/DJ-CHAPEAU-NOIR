@@ -5,12 +5,12 @@ body{
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
-.aniversaire-img-left img{
+.anniversaire-img-left img{
     max-width: 350px;
     border-radius: 15px;
 
 }
-.aniversaire-img-right img{
+.anniversaire-img-right img{
     max-width: 350px;
     border-radius: 15px;
 }
@@ -23,11 +23,13 @@ body{
 }
 .anniversaire-descriptif{
     padding: 40px ;
-    font-size: 2rem;
-    line-height: 50px;
+    font-size: 4rem;
+    line-height: 70px;
     font-weight: bold;
-    color: rgb(201, 189, 189);
+    color: white;
 }
 .anniversaire-descriptif p{
     margin: 20px;
+    padding: 30px;
+    text-shadow: 2px 2px 2px red;
 }
