@@ -191,7 +191,42 @@ nav ul li a {
 nav ul li a:hover {
     color: white;
 }
-
+.num-tel{
+    display: none;
+    padding: 50px;
+}
+.num-tel a{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+     text-shadow:
+    0 0 8px #1524f0,
+    0 0 20px rgba(255, 255, 255, 0.9);
+    line-height: 40px;
+    
+}
+@media screen and (max-width : 600px){
+    .num-tel{
+    display: block;  
+}
+}
+.presta-tel{
+    display: none;
+    
+}
+.presta-tel ul li a{
+    color: yellow;
+    font-size: 1.5rem;
+     text-shadow:
+    0 0 8px #1524f0,
+    0 0 20px rgba(255, 255, 255, 0.9);
+    line-height: 40px;
+}
+@media screen and (max-width : 600px){
+    .presta-tel{
+    display: block;  
+    
+}
+}
     /*-----------NAV------------*/
 .header-nav-container{
     font-size: 6rem;
@@ -218,7 +253,7 @@ nav ul li a:hover {
 .header-nav-container li:hover{
     font-size: 7.5rem;
 }
-@media screen and (max-width : 500px){
+@media screen and (max-width : 600px){
     .header-nav-container ul li a{
     font-size: 2rem;  
 }
@@ -288,15 +323,15 @@ nav ul li a:hover {
     padding: 50px ;
     margin: 0;
 }
-@media screen and (max-width : 480px){
-    .didier{
-        padding: 0px;
+@media screen and (max-width : 600px){
+    .Didier{
+        padding: 5px;
         margin: 0;
     }
 }
 @media screen and (max-width : 480px){
     .img-ambiance img{
-        max-width: 250px;
+        max-width: 150px;
         padding: 10px;
     }
 }
@@ -310,7 +345,7 @@ nav ul li a:hover {
 }
 @media screen and (max-width : 1200px){
     .titre-ambiance{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 .texte-ambiance{
@@ -329,7 +364,8 @@ nav ul li a:hover {
 @media screen and (max-width : 600px){
     .texte-ambiance{
         font-size: 1rem;
-        line-height: 35px;
+        line-height: 25px;
+        padding: 10px;
     }
 }
 .reseau-ambiance{
@@ -465,14 +501,7 @@ nav ul li a:hover {
     padding: 25px;
     
 }
-.ambiance-chiffre-container h4{
-    font-size: 4rem;
-}
-@media screen and (max-width : 1200px){
-    .ambiance-chiffre-container h4{
-        font-size: 2rem;   
-    }
-}
+
 .ambiance-chiffre-container p{
     font-weight: bold;
     padding: 0px;
@@ -485,6 +514,13 @@ nav ul li a:hover {
         padding: 5px 20px;
     }
 }
+@media screen and (max-width : 600px){
+    .ambiance-chiffre-container p{
+        font-size: 1rem;
+        font-weight: normal;   
+        padding: 5px ;
+    }
+}
 /*---------------------DESCRIPTIF---------------------*/
 .description{
     background: var(--colorblack);
@@ -492,7 +528,11 @@ nav ul li a:hover {
     padding: 0;
     padding: 50px ;
     margin: 0;
-    
+}
+@media screen and (max-width : 1200px){
+    .description{
+        padding: 5px;
+    }
 }
 .description-box{
     display: grid;
@@ -562,6 +602,13 @@ nav ul li a:hover {
         font-size: 3rem;
     }
 }
+@media screen and (max-width: 600px) {
+    .prestation-titre {
+        padding: 15px 0;
+        font-size: 1.5rem;
+        
+    }
+}
 
 .presentation-box-1{
     display: grid;
@@ -589,21 +636,28 @@ nav ul li a:hover {
     width: 250px;
     border-radius: 35px;
 }
+@media screen and (max-width:480px){
+    .presentation-mariage-img {
+        height: 140px;
+        width: 140px;
+    }
+}
 
 .presentation-mariage-img img{
     border-radius: 35px;
+}
+@media screen and (max-width:600px){
+    .presentation-mariage-img img{
+        height: 140px;
+        width: 140px;
+    }
 }
 
 #mariage{
     opacity: 0;
     transition: 2s ease-in-out;
 }
-@media screen and (max-width:1200px){
-    #mariage{
-       opacity: 1;
-       transition: 0s;
-    }
-}
+
 .presentation-mariage-texte{
     padding: 25px;
     font-size: 3rem;
@@ -623,6 +677,13 @@ nav ul li a:hover {
     font-size: 1.5rem;
     transition: 0.5s;
     border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-mariage-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
 }
 
 .presentation-mariage-bottom a :hover{
@@ -650,7 +711,7 @@ nav ul li a:hover {
     width: 250px;
     border-radius: 35px;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:600px){
     .presentation-anniversaire-img{
         height: 140px;
         width: 140px;
@@ -946,6 +1007,13 @@ nav ul li a:hover {
         line-height: 40px;
     }
 }
+@media screen and (max-width:600px) {
+    .info-descrip p{
+        padding: 10px;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+}
 .info-titre h3{
     padding: 25px;
     font-size: 4rem;
@@ -1005,12 +1073,24 @@ footer{
    border-radius: 20px;
    padding: 15px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     .footer-container-left{
         padding: 5px;
         font-size: 2rem;
     }
 }
+.footer-container-left a{
+    color: yellow;
+}
+@media screen and (max-width:600px) {
+    .footer-container-left a{
+        padding:0;
+        font-size: 1rem;
+    }
+}
+
+
+
 .footer-container-center{
     padding: 5px;
     

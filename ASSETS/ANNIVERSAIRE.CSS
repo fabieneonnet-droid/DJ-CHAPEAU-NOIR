@@ -33,3 +33,28 @@ body{
     padding: 30px;
     text-shadow: 2px 2px 2px red; 
 }
+@media screen and (max-width:600px) {
+    .anniv-up{
+    display: block;
+}
+    .anniversaire-img-left img{
+    max-width:200px;
+    border-radius: 15px;
+}
+    .anniversaire-img-right img{
+    display: none;
+}
+    .anniversaire-titre{
+    font-size: 2rem;
+}
+    .anniversaire-descriptif{
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 5px;font-weight: normal;
+}
+    .anniversaire-descriptif p{
+    margin: 5px;
+    padding: 10px;
+    text-shadow: none
+}
+}

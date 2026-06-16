@@ -60,13 +60,10 @@ li{
     background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
     margin:80px;
 }
-@media screen and (max-width : 480px){
-    button{
-        font-weight: normal;
-    }
+@media screen and (max-width : 600px){
     #box-container{
+        margin: 0;
         padding: 5px;
-        margin:0 15px;
     }
 }
 

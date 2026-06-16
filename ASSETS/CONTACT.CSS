@@ -36,10 +36,11 @@ body {
     text-shadow: 2px 2px 2px red;
     padding-bottom: 70px;
 }
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 600px) {
   .presentation-texte p{
     font-size: 1rem;
     color: black;
+    padding-bottom: 15px;
   }
 }
 form {
