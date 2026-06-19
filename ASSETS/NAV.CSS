@@ -32,7 +32,15 @@ li{
     text-shadow: 4px 4px 4px blue;
     
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1300px) {
+    li{
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width:840px) {
     li{
         padding: 10px;
         font-size: 1.5rem;

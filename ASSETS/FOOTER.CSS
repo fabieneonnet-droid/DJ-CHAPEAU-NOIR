@@ -30,15 +30,15 @@ footer{
 @media screen and (max-width:480px) {
     .footer-container-left{
         padding: 5px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 .footer-container-left a{
     color: yellow;
 }
 @media screen and (max-width:600px) {
-    .footer-container-left a{
-        padding:0;
+    .footer-container-left a h3{
+        padding-bottom: 20px;
         font-size: 1rem;
     }
 }
