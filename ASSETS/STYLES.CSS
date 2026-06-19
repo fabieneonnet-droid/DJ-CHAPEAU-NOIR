@@ -770,7 +770,7 @@ nav ul li a:hover {
 
 .presentation-box-2{
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 50% 50%;
     color: var(--color4);
     text-shadow: 4px 4px 4px var(--color3);
     padding: 25px;
@@ -902,7 +902,6 @@ nav ul li a:hover {
 
 
 
-
 .prestation-karaoke-tire{
     padding: 35px;
 }
@@ -966,6 +965,87 @@ nav ul li a:hover {
     color: var(--color3);
     background: var(--colorwhite);
 }
+.presentation-box-3{
+     display: block;
+    color: var(--color4);
+    text-shadow: 4px 4px 4px var(--color3);
+    padding: 25px;
+
+}
+@media screen and (max-width:1200px) {
+    .presentation-box-3{
+        display: block;
+        padding: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+.prestation-bapteme-tire{
+    padding: 35px;
+}
+.presentation-bapteme-container{
+    display: flex;
+    padding: 20px;
+}
+.presentation-bapteme-img{
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.678);
+    height: 250px;
+    width: 250px;
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-bapteme-img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-bapteme-img img{
+    border-radius: 35px;
+}
+@media screen and (max-width:480px){
+    .presentation-bapteme-img img{
+        height: 140px;
+        width: 140px;
+    }
+}
+.presentation-bapteme-texte{
+    padding: 25px;
+    font-size: 3rem;
+}
+@media screen and (max-width:480px){
+    .presentation-bapteme-texte{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+.prestation-bapteme-tire{
+    padding: 35px;
+}
+.presentation-bapteme-bottom button{
+    margin: 25px;
+    padding: 25px;
+    background: blue;
+    color: white;
+    border-radius: 51000px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    border: none;
+}
+@media screen and (max-width:480px){
+    .presentation-bapteme-bottom button {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.presentation-bapteme-bottom a :hover{
+    font-size: 1.7;
+    color: var(--color3);
+    background: var(--colorwhite);
+}
+
+
 /*----------------------------------------------------*/
 .info{
     background-image: linear-gradient(180deg,black, #120366 );
